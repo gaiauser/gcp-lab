@@ -1,0 +1,55 @@
+{
+  "type" : "record",
+  "name" : "CODE36",
+  "doc" : "Sqoop import of CODE36",
+  "fields" : [ {
+    "name" : "CORP",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "CORP",
+    "sqlType" : "2"
+  }, {
+    "name" : "TABL",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "TABL",
+    "sqlType" : "1"
+  }, {
+    "name" : "CODE",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "CODE",
+    "sqlType" : "1"
+  }, {
+    "name" : "LONGDESC",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "LONGDESC",
+    "sqlType" : "1"
+  }, {
+    "name" : "SHORTDES",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "SHORTDES",
+    "sqlType" : "1"
+  }, {
+    "name" : "SORTFLAG",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "SORTFLAG",
+    "sqlType" : "1"
+  }, {
+    "name" : "ACTIVE_FLAG",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "ACTIVE_FLAG",
+    "sqlType" : "1"
+  }, {
+    "name" : "LAST_STATUS_CHG_DATE",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "LAST_STATUS_CHG_DATE",
+    "sqlType" : "93"
+  } ],
+  "tableName" : "CODE36"
+}
