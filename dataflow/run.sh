@@ -6,8 +6,8 @@ mvn clean install
 
 mvn -Pdataflow-runner compile exec:java \
 -Dexec.mainClass=com.development.beam.BeamSQLReadAvro \
--Dexec.args="--project=linknet-poc \
+-Dexec.args="--project=$PROJECT_ID \
 --region=asia-east1 \
---tempLocation=gs://linknet-poc/dataflow-temp \
---stagingLocation=gs://linknet-poc/dataflow-staging \
+--tempLocation=gs://$PROJECT_ID/dataflow-temp \
+--stagingLocation=gs://$PROJECT_ID/dataflow-staging \
 --runner=DataflowRunner"

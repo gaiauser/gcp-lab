@@ -30,7 +30,7 @@ public class BeamSQLReadAvro {
 		Schema schema_in_CODE36 = new Schema.Parser().parse(new File("schemas/CODE36.avsc"));
 		
 		/* Load the data */
-		PCollection<GenericRecord> avro_CODE36 = p.apply("Load the data",AvroIO.readGenericRecords(schema_in_CODE36).withBeamSchemas(true).from("gs://linknet-poc/dwh/staging01/CODE36/*.avro"));
+		PCollection<GenericRecord> avro_CODE36 = p.apply("Load the data",AvroIO.readGenericRecords(schema_in_CODE36).withBeamSchemas(true).from("gs://[PROJECT_ID]/dwh/staging01/CODE36/*.avro"));
 		
 		/* SQL Transform, produces Beam Row */
 	    PCollection<Row> sql01 = avro_CODE36.apply("SQL Transform 01 A",SqlTransform.query("SELECT TABL,COUNT(*) CNT_CODE FROM PCOLLECTION GROUP BY TABL"));
