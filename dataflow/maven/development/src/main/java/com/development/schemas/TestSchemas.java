@@ -5,7 +5,7 @@ import com.google.api.services.bigquery.model.TableSchema;
 import com.google.api.services.bigquery.model.TableFieldSchema;
 
 public class TestSchemas {
-	static String p = "[PROJECT_ID]";
+    static String p = "[PROJECT_ID]";
     static String d = "TEST";
     
     /* table sales_move_step_01*/

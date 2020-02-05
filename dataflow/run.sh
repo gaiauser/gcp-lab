@@ -2,8 +2,6 @@
 
 cd maven/development
 
-mvn clean install
-
 mvn -Pdataflow-runner compile exec:java \
 -Dexec.mainClass=com.development.beam.BeamSQLReadAvro \
 -Dexec.args="--project=$PROJECT_ID \

@@ -20,6 +20,7 @@ import org.apache.avro.generic.GenericRecord;
 import java.io.File;
 import java.io.IOException;
 
+/* Import ORM classes */
 import com.development.schemas.*;
 
 public class BeamSQLReadAvro {
